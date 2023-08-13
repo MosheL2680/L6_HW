@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    Name:
+    <input id="userName">
+    <button onclick="checkUserName()">send</button>
+    <div id="d1"></div>
+
+    Password:
+    <input type="password" id="password">
+    <button onclick="checkPassword()">send</button>
+    <div id="d2"></div>
+
+
+
+    <script>
+
+        function checkUserName() {
+            // I kept in this comment the long if:
+            //     if( userName.value == "Moshe"){
+            //         d1.innerHTML = `good, ${userName.value}:)`
+            //     }else{
+            //         d1.innerHTML = `somthing went wrong, ${userName.value}`
+            //     }
+            userName.value == "Moshe" ?
+                d1.innerHTML = `good, ${userName.value}:)` :
+                d1.innerHTML = `somthing went wrong, ${userName.value}`
+
+        }
+ 
+        function checkPassword() {
+            password.value == "268026" ?
+                d2.innerHTML = `thank you, ${userName.value}:)` :
+                d2.innerHTML = alert("Uncorect password!") 
+        }
+
+    </script>
+</body>
+
+</html>
